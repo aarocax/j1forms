@@ -1,0 +1,51 @@
+.form__controls {
+  .form__button {
+    background-color: $primary;
+    color: white;
+    border-radius: 4px;
+    border: 0;
+    padding: 12px 16px;
+    font-family: $font-regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: auto;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 !important;
+    &:disabled {
+      background-color: $base-white;
+      color: $neutral-dark;
+      border: 1px solid $neutral-dark;
+      cursor: not-allowed;
+      &:hover {
+        background-color: $base-white;
+        color: $neutral-light;
+        border: 1px solid $neutral-light;
+      }
+    }
+    &:hover {
+      background-color: $primary-light;
+      color: $primary-dark;
+      border: 1px solid $primary-dark;
+    }
+  }
+}
+
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+}
+// Responsive-1280px
+@include max-width($desktop) {
+}
+// Responsive-992px
+@include max-width($small-desktop) {
+}
+// Responsive-768px
+@include max-width($tablet) {
+}
+// Responsive-576px
+@include max-width($movil) {
+}

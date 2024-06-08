@@ -1,0 +1,38 @@
+footer {
+  background-color: $neutral-light;
+  width: 100%;
+  padding: 1.9rem 1rem;
+  text-align: center;
+  margin-top: auto;
+  color: $neutral-dark;
+  font-family: $font-regular;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  .container {
+    .info-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      column-gap: 20px;
+      row-gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// Responsive-1380px
+@include max-width($desktop) {
+}
+// Responsive-992px
+@include max-width($small-desktop) {
+}
+// Responsive-768px
+@include max-width($tablet) {
+}
+// Responsive-576px
+@include max-width($movil) {
+}

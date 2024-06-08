@@ -1,0 +1,208 @@
+#documents {
+    margin-top: 65px;
+
+    > h2 {
+        margin: 0;
+    }
+
+    .document {
+        padding-bottom: 30px;
+        padding-top: 30px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid #DDEFFF;
+        }
+
+        .wrap-label {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15PX;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+
+                .text {
+                    color: #000A14;
+                    font-family: $font-regular;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
+
+            }
+
+            .tag {
+                display: flex;
+                align-items: center;
+                gap: 2px;
+                padding: 2px 5px;
+                border-radius: 4px;
+
+                &.pending {
+                    background: #FF8100;
+                }
+
+                &.done {
+                    background: #00BD57;
+                }
+
+                .text {
+                    color: #FFF;
+                    font-family: $font-regular;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%; 
+                }
+            }
+
+        }
+
+        .download-doc {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 30px;
+
+            .text {
+                color: #797979;
+                font-family: $font-regular;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; 
+                text-decoration-line: underline;
+            }
+        }
+
+        .wrap-upload-doc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+            .wrap-doc {
+                display: flex;
+                gap: 15px;
+                height: 100%;
+                flex-wrap: wrap;
+
+                .wrap-file {
+                    position: relative;
+                    display: inline-block;
+                    background:#F3F5F7;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    &.uploaded {
+                        label {
+                            .upload {
+                                display: none!important;
+                            }
+
+                            .view {
+                                display: block!important;
+                            }
+
+                            .wrap-svg {
+                                .view {
+                                    display: block!important;
+                                }
+
+                                .upload {
+                                    display: none!important;
+                                }
+                            }
+                        }
+                    }
+
+                    form {
+                        height: 100%;
+                        position: absolute;
+                        width: 100%;
+
+                        .upload-doc {
+                            opacity: 0;
+                            overflow: hidden;
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: 0;
+                            right: 0;
+                            cursor: pointer;
+
+                            form#upload-form {
+                                height: 100%;
+                                position: absolute;
+                                width: 100%;
+                            }
+                        }
+                    }
+        
+                    label {
+                        display: flex;
+                        align-items: center;
+                        gap: 5px;
+                        padding: 12px 16px;
+                        margin: 0;
+                        cursor: pointer;
+                    
+                        &[for="file"] {
+                            cursor: pointer;
+                            pointer-events: none;
+                        }
+        
+                        .text {
+                            color: #797979;
+                            font-family: $font-regular;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 120%;
+                        }
+                    }
+                }
+
+                .filename {
+                    color: #797979;
+                    font-family: $font-regular;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                }
+            }
+
+            .wrap-replace {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                padding: 12px 16px;
+                margin: 0;
+                color:#ffffff;
+                border-radius: 4px;
+                background: #005DAB!important;
+                text-decoration: none;
+                cursor: pointer;
+                
+                .text {
+                    color:#ffffff;
+                    font-family: $font-regular;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 120%;
+                }
+            }
+        }
+    }
+}

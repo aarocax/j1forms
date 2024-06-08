@@ -1,0 +1,41 @@
+@import "00_variables";
+@import "00_mixins";
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: $font-regular;
+}
+
+.container {
+  max-width: 830px;
+  width: 100%;
+  padding: 0 65px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px!important;
+  }
+}
+
+// Imports posteriores
+@import "header";
+@import "footer";
+@import "blocks/block_docs";
+@import "blocks/block_form";
+@import "blocks/block_login";
+@import "structure/form__controls";
+@import "elements/header-switch";

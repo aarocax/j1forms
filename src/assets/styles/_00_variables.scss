@@ -1,0 +1,31 @@
+// Beakpoints
+$desktop: 1200px;
+$small-desktop: 992px;
+$tablet: 768px;
+$movil: 567px;
+
+//Colors
+$primary: #005DAB;
+$primary-light: #d3f1ff;
+$primary-dark: #003a5e;
+
+$neutral: #797979;
+$neutral-dark: #8d8e8e;
+$neutral-light: #f3f5f7;
+$neutral-semilight: #D3D3D3;
+
+$base-red: #ff000a;
+$base-red-error: #F04438;
+$base-yellow: #ff8100;
+$base-yellow-error: #FFFCF8;
+$base-green: #00bd57;
+$base-white: #FFFFFF;
+$base-black: #000A12;
+$base-skyblue: #D3F1FF;
+
+// Transition duration
+$transition-duration: 0.3s;
+$transition: all $transition-duration ease;
+
+//Fonts
+$font-regular: "Plus Jakarta Sans";

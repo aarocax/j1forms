@@ -1,0 +1,32 @@
+.header-switch {
+    background: #D3F1FF;
+    padding: 15px 0;
+
+    .container {
+        .switch-wrap {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                padding: 8px;
+                color: var(--Color-Primary-Dark, #003A5E);
+                font-family: $font-regular;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                border-radius: 4px;
+                line-height: 120%; 
+
+                &.active {
+                    background: white;
+                }
+
+                &:not(.active) {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

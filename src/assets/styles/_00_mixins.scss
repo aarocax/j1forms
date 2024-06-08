@@ -1,0 +1,32 @@
+
+
+// Responsive
+@mixin max-width($screen-size) {
+  @media only screen and (max-width: $screen-size) {
+    @content;
+  }
+}
+@mixin min-width($screen-size) {
+  @media only screen and (min-width: $screen-size) {
+    @content;
+  }
+}
+@mixin max-height($screen-size) {
+  @media only screen and (max-height: $screen-size) {
+    @content;
+  }
+}
+@mixin min-height($screen-size) {
+  @media only screen and (min-height: $screen-size) {
+    @content;
+  }
+}
+
+// Transición
+@mixin transition($animation-duration) {
+  -webkit-transition: all $animation-duration ease-in-out;
+  -o-transition: all $animation-duration ease-in-out;
+  -moz-transition: all $animation-duration ease-in-out;
+  -ms-transition: all $animation-duration ease-in-out;
+  transition: all $animation-duration ease-in-out;
+}
